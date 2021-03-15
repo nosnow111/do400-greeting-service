@@ -23,7 +23,7 @@ pipeline{
         stage('Deploy') {
             steps {
                 sh '''
-                    oc project vmeyman-greetings
+                    oc project  vmeyman-greetings
                     oc start-build greeting-service --follow --wait
                    '''
            }
